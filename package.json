@@ -1,12 +1,12 @@
 {
   "name": "js_modules",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Webpack2 example",
   "main": "index.js",
   "scripts": {
     "build": "webpack"
   },
-  "author": "",
+  "author": "Mario de Biase",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^2.2.1"
