@@ -19,6 +19,16 @@ const config = {
           loader: 'css-loader'
         }), // legacy way
         test: /\.css$/
+      },
+      {
+        // Remember: loaders are applied from right to left
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: 40000 }
+          },
+          'image-webpack-loader'],
+        test: /\.(jpe?g|png|gif|svg)$/
       }
     ]
   },
