@@ -28,7 +28,10 @@ const config = {
             loader: 'url-loader',
             options: { limit: 40000 }
           },
-          'image-webpack-loader'],
+          {
+            loader:'image-webpack-loader',
+            options: {} // workaround
+        }],
         test: /\.(jpe?g|png|gif|svg)$/
       }
     ]
